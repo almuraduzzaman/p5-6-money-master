@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="icon" type="image/x-icon" href="/Pexels Photo by Karolina Grabowska.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section>
+        <h1 class="text-blue-500 text-5xl font-bold text-center my-8">Money Master💰</h1>
+        <div class="lg:grid grid-cols-2 gap-x-16 md:mx-16">
+            <!-- left section  -->
+            <div>
+                <img class="w-full h-full rounded-md" src="/images/img.png" alt="">
+            </div>
+            <!-- right section  -->
+            <div class="bg-slate-100 rounded-md">
+                <!-- income  -->
+                <div>
+                    <h2 class="pt-8 md:mt-8 mb-7 text-2xl font-bold text-center">Income</h2>
+                    <div class="grid grid-cols-2 w-11/12">
+                        <p class="px-4 py-2 w-11/12 text-lg text-end">Income:</p>
+                        <input class="w-3/4 px-4 py-2 bg-gray-200" type="number" name="" id="input-income">
+                    </div>
+                </div>
+
+                <!-- Expenses  -->
+                <div>
+                    <h2 class="mt-8 mb-7 text-2xl font-bold text-center">Expenses</h2>
+                    <div class="grid grid-cols-2 w-11/12">
+                        <p class="px-4 py-2 w-11/12 text-lg text-end">Food:</p>
+                        <input class="w-3/4 px-4 py-2 bg-gray-200" type="number" name="" id="input-food">
+                    </div>
+                    <div class="grid grid-cols-2 my-5 w-11/12">
+                        <p class="px-4 py-2 w-11/12 text-lg text-end">Rent:</p>
+                        <input class="w-3/4 px-4 py-2 bg-gray-200" type="number" name="" id="input-rent">
+                    </div>
+                    <div class="grid grid-cols-2 w-11/12">
+                        <p class="px-4 py-2 w-11/12 text-lg text-end">Clothes:</p>
+                        <input class="w-3/4 px-4 py-2 bg-gray-200" type="number" name="" id="input-clothes">
+                    </div>
+                </div>
+
+                <!-- calculate button  -->
+                <div class="flex justify-center my-6">
+                    <button class="px-14 py-3.5 text-white bg-blue-500 hover:bg-blue-600 rounded-md"
+                        id="btn-calculate">Calculate</button>
+                </div>
+
+                <!-- sub-total section  -->
+                <div class="flex flex-col my-6">
+                    <h2 class="text-2xl font-bold text-center">Total Expenses: <span id="text-total-expenses">00</span>
+                    </h2>
+                    <h2 class="mt-5 mb-7 text-2xl font-bold text-center">Balance: <span id="text-balance">00</span></h2>
+                </div>
+
+                <!-- save section  -->
+                <div class="flex justify-center items-center gap-3">
+                    <input class="w-2/6 px-4 py-2 bg-gray-200" type="number" name="" id="input-save"
+                        placeholder="Amount to save">
+                    <p><b>%</b></p>
+                    <button class="px-8 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-md"
+                        id="btn-save">Save</button>
+                </div>
+
+                <!-- total section  -->
+                <div class="flex flex-col my-6">
+                    <h2 class="text-2xl font-bold text-center">Saving Amount: <span id="save-text">00</span></h2>
+                    <h2 class="mt-5 mb-7 text-2xl font-bold text-center">Remaining Balance: <span
+                            id="remaining-text">00</span></h2>
+                </div>
+
+                <!-- reset button  -->
+                <div class="flex justify-center items-center">
+                    <button class="px-8 py-2 mb-7 text-white bg-blue-500 hover:bg-blue-600 rounded-md"
+                        id="btn-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- copyright -->
+        <p class="text-center text-blue-400 p-2">&copy;All Right Reserved By Murad</p>
+    </footer>
+
+
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
